@@ -1,0 +1,46 @@
+/* Base Theme */
+.ag-theme-quartz-dark {
+  --ag-background-color: #1e1e2f; /* dark bg */
+  --ag-header-background-color: #2a2a3c;
+  --ag-header-foreground-color: #ffffff;
+  --ag-odd-row-background-color: #252536;
+  --ag-row-hover-color: #33334d;
+  --ag-selected-row-background-color: #2c5282;
+  --ag-border-color: #3a3a4d;
+
+  --ag-header-height: 55px;
+  --ag-row-height: 44px;
+  --ag-font-size: 14px;
+  --ag-font-family: 'Inter', sans-serif;
+}
+
+/* Header Styling */
+.ag-theme-quartz-dark .ag-header-cell-label {
+  font-weight: 600;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+/* Table Body Cells */
+.ag-theme-quartz-dark .ag-cell {
+  color: #e5e7eb;
+  padding: 10px;
+  border: none;
+}
+
+/* Wrapper (Card Look) */
+.ag-theme-quartz-dark .ag-root-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid #2a2a3c;
+  overflow: hidden;
+}
+
+/* Paging Panel */
+.ag-theme-quartz-dark .ag-paging-panel {
+  border-top: 1px solid #2a2a3c;
+  background-color: #1e1e2f;
+  color: #e5e7eb;
+  padding: 12px;
+  font-size: 13px;
+}
