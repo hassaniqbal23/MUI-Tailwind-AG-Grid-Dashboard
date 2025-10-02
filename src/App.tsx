@@ -4,26 +4,40 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainLayout } from "@/components/layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
+import Analytics from "./pages/Analytics";
+import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={
-          <MainLayout>
-            <Dashboard />
-          </MainLayout>
-        } />
-        <Route path="/users" element={
-          <MainLayout>
-            <Users />
-          </MainLayout>
-        } />
-      </Routes>
-    </BrowserRouter>
-  </QueryClientProvider>
-);
+const App = () => {
+  // Always apply dark mode
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={
+            <MainLayout>
+              <Dashboard />
+            </MainLayout>
+          } />
+          <Route path="/users" element={
+            <MainLayout>
+              <Users />
+            </MainLayout>
+          } />
+          <Route path="/analytics" element={
+            <MainLayout>
+              <Analytics />
+            </MainLayout>
+          } />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

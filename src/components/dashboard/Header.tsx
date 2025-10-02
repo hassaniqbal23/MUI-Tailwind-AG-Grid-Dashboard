@@ -34,26 +34,22 @@ export const Header = ({ onMenuClick }: HeaderProps) => {
           <Input
             type="search"
             placeholder="Search..."
-            className="pl-10 bg-background border-border focus:ring-2 focus:ring-primary"
             aria-label="Search dashboard"
+            className="pl-9 w-full"
           />
         </div>
       </div>
 
       {/* Right Section */}
       <div className="flex items-center gap-2">
-        
         {/* Mobile Search Button */}
         <Button
           variant="ghost"
-          size="icon"
           className="md:hidden"
           aria-label="Search"
         >
           <Search className="w-5 h-5" />
         </Button>
-
-        {/* Notifications */}
         <Button
           variant="ghost"
           size="icon"
