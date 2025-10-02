@@ -29,7 +29,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
             paddingTop: '1rem',
           }}
         >
-          <div className="max-w-screen-2xl mx-auto w-full">
+          <div className="max-w-screen-2xl mx-auto w-full bg-background">
             {children}
           </div>
         </main>
