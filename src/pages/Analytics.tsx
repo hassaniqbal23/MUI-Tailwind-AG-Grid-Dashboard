@@ -132,11 +132,13 @@ const Analytics = () => {
                       borderRadius: '8px',
                       color: 'hsl(var(--foreground))',
                     }}
+                    itemStyle={{ color: 'hsl(var(--foreground))' }}
+                    labelStyle={{ color: 'hsl(var(--foreground))' }} 
                   />
                 </PieChart>
               </ResponsiveContainer>
             </article>
-          </div>
+          </div>color: 'hsl(var(--foreground))
 
           {/* Bar Chart - Full Width */}
           <article 
