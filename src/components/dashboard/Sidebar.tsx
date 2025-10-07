@@ -20,7 +20,7 @@ const navigationItems = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, path: '/', badge: null },
   { id: 'users', label: 'Users', icon: Users, path: '/users', badge: 12 },
   { id: 'analytics', label: 'Analytics', icon: BarChart3, path: '/analytics', badge: null },
-//   { id: 'reports', label: 'Reports', icon: FileText, path: '/reports', badge: 3 },
+  { id: 'reports', label: 'Reports', icon: FileText, path: '/reports', badge: 3 },
 //   { id: 'settings', label: 'Settings', icon: Settings, path: '/settings', badge: null },
 ];
 
