@@ -7,6 +7,7 @@ import Users from "./pages/Users";
 import Analytics from "./pages/Analytics";
 import { useEffect } from "react";
 import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,12 @@ const App = () => {
         <Route path="/reports" element={
             <MainLayout>
               <Reports />
+            </MainLayout>
+          } />
+
+          <Route path="/settings" element={
+            <MainLayout>
+              <Settings />
             </MainLayout>
           } />
         </Routes>
